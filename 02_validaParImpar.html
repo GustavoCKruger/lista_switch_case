@@ -5,10 +5,20 @@
     */
 
     //ENTRADA
-
+    const num = Number(prompt("Informe um número inteiro, e vou determinar se é par ou ímpar."));
     
     //PROCESSAMENTO
-
+    switch (num) {
+        case 0:
+            alert(`Par`);
+        break;
+        case 1:
+            alert(`Ímpar`);
+        break;
+        default:
+        alert(`Informe um número!`);
+        break;
+    }
     
     //SAÍDA
 

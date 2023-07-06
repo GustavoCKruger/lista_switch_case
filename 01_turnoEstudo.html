@@ -12,11 +12,23 @@
     */
 
     //ENTRADA
-    
+    const turno = prompt("Informe em que turno você estuda? Responda com  M-matutino ou V-Vespertino ou N- Noturno.").trim().toUpperCase();
     
     //PROCESSAMENTO
-
-    
+    switch (turno){
+        case "M":
+            alert(`Matutino`);
+        break;
+        case "V":
+            alert(`Vespertino`);
+        break;
+        case "N":
+            alert(`Noturno`);
+        break;
+        default:
+            alert(`Opção incorreta!`);
+        break;
+    }
     //SAÍDA
 
 </script>
