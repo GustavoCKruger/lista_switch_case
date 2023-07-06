@@ -20,70 +20,78 @@
 
     //PROCESSAMENTO
 
-    switch (perg1){
+    switch (perg1) {
         case "S":
-        resposta = resposta++;
-        break;
-        default: 
-        resposta = resposta;
-        break;alert(resposta)
+            resposta++;
+            break;
+        case "N":
+            break;
+        default:
+            alert(`Resposta inválida, considerando com não.`);
+            break;
     }
-    switch (perg2){
+
+    switch (perg2) {
         case "S":
-        resposta = resposta++;
-        break;
-        default: 
-        resposta = resposta;
-        break;
+            resposta++;
+            break;
+        case "N":
+            break;
+        default:
+            alert(`Resposta inválida, considerando com não.`);
+            break;
     }
-    switch (perg3){
+
+    switch (perg3) {
         case "S":
-        resposta = resposta++;
-        break;
-        default: 
-        resposta = resposta;
-        break;
+            resposta++;
+            break;
+        case "N":
+            break;
+        default:
+            alert(`Resposta inválida, considerando com não.`);
+            break;
     }
-    switch (perg3){
+
+    switch (perg4) {
         case "S":
-        resposta = resposta++;
-        break;
-        default: 
-        resposta = resposta;
-        break;
+            resposta++;
+            break;
+        case "N":
+            break;
+        default:
+            alert(`Resposta inválida, considerando com não.`);
+            break;
     }
-    switch (perg4){
+
+    switch (perg5) {
         case "S":
-        resposta = resposta++;
-        break;
-        default: 
-        resposta = resposta;
-        break;
+            resposta++;
+            break;
+        case "N":
+            break;
+        default:
+            alert(`Resposta inválida, considerando com não.`);
+            break;
     }
-    switch (perg5){
-        case "S":
-        resposta = resposta++;
-        break;
-        default: break;
-        resposta = resposta;
-        break;
+
+    let classificação
+
+    switch (resposta) {
+        case 2:
+            classificação = "Suspeita";
+            break;
+        case 3:
+        case 4:
+            classificação = "Cúmplice";
+            break;
+        case 5:
+            classificação = "Assasino";
+            break;
+        default:
+            classificação = "Inocente";
+            break;
     }
-    switch (resposta == 2){
-        case true: 
-        alert(`Suspeito`);
-    }
-    switch (resposta == 3 || resposta == 4){
-        case true: 
-        alert(`Cúmplice`);
-    }
-    switch (resposta == 5){
-        case true: 
-        alert(`Assasino`);
-    }
-    switch (resposta == 0 || resposta == 1){
-        case true: 
-        alert(`Inocente`);
-    }
-    
-    alert(resposta)
+
+    alert(classificação);
 </script>
